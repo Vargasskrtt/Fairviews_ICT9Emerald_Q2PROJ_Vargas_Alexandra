@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Recipes Showcase</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://images3.alphacoders.com/109/1095088.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            font-size: 14px; 
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #333;
+        }
+
+        .navbar-brand img {
+            width: 150px;
+            height: auto;
+        }
+
+        .recipe-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 320px;
+            text-align: center;
+        }
+
+        .recipe-img {
+            width: 100%;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .navbar .d-flex {
+            margin-left: 200px;
+        }
+
+        .content {
+            margin-top: 60px;
+        }
+
+        .recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .recipe-container .col-md-3 {
+            flex: 1 1 22%;
+            max-width: 22%;
+        }
+
+        .recipe-container .col-md-3 .recipe-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            text-align: center;
+        }
+
+        .recipe-container .recipe-card h3 {
+            font-size: 1.2em;
+        }
+
+        .recipe-container .recipe-card p {
+            font-size: 0.9em;
+        }
+
+        .recipe-container .recipe-card .btn {
+            padding: 8px 15px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-container .col-md-3 {
+                flex: 1 1 48%;
+                max-width: 48%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .recipe-container .col-md-3 {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://img.freepik.com/premium-vector/food-recipe-book-logo-design_139372-114.jpg" alt="Food Recipe Book Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="font-family: 'Georgia', serif;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="secondpage.html" style="font-family: 'Georgia', serif;">Second Page</a>
+                    </li>
+
+                    </li>
+                </ul>
+
+                <form class="d-flex ml-auto">
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <button class="btn btn-success" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="content container">
+        <div class="recipe-container row">
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://www.allrecipes.com/thmb/g9e_IulIBTSmu-24aKsHrkWXW_Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/35151-traditional-filipino-lumpia-ddmfs-hero-3x4-0744-6a66461864c9437da74828a882f2c42a.jpg" alt="Tiramisu" class="recipe-img">
+                    <h3>Lumpia</h3>
+                    <p>Lumpias are made of thin paper-like or crepe-like pastry skin called "lumpia wrapper" enveloping savory or sweet fillings.</p>
+                    <a href="Lumpia.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://cuddlesandcrumbs.com/wp-content/uploads/2011/10/ubemacapunocake.jpg?w=502&h=753" alt="Ube macapuno cake" class="recipe-img">
+                    <h3>Ube macapuno Cake</h3>
+                    <p>A deliciously light Filipino cake.Its vibrant purple color will look gorgeous on any dessert table!</p>
+                    <a href="Ube.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6512910.jpg&q=60&c=sc&poi=auto&orient=true&h=512" alt="Chicken Arroz Caldo" class="recipe-img">
+                    <h3>Chicken Arroz Caldo</h3>
+                    <p>A comforting and flavorsome Filipino rice and chicken soup</p>
+                    <a href="caldo.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://www.allrecipes.com/thmb/Pq3eNjlUA9XPQlR_TXRZEEpl1sY=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/128699-famous-chicken-adobo-DDMFS-4x3-2da8cfc2ccc44ddfb1d4cb1bf1a28e48.jpg" alt="Chicken Adobo" class="recipe-img">
+                    <h3>Chicken Adobo</h3>
+                    <p>This chicken adobo recipe is simple to make and loved by all who try it!</p>
+                    <a href="Adobo.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://www.friendcheapmenu.com/wp-content/uploads/2020/12/how-to-make-kwek-kwek.jpg" alt="Kwek Kwek" class="recipe-img">
+                    <h3>Kwek Kwek</h3>
+                    <p>A popular street food in the Philippines, kwek kwek are hard-boiled quail eggs in orange batter that are deep fried</p>
+                    <a href="Kwek.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://www.simplyrecipes.com/thmb/eokGS-J990sNqF-TRIu2gAa1oV0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Bistek-LEAD-04-1a779864ceae41c5800bd112699d6a36.jpg" alt="Bistek" class="recipe-img">
+                    <h3>Bistek</h3>
+                    <p>It's such a crowd-pleaser that it can transcend from an everyday family meal to elegant party fare.</p>
+                    <a href="Bistek.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://chickenfriedkitchen.com/wp-content/uploads/2022/06/Pancit-Bihon-1.jpg" alt="Pancit Bihon" class="recipe-img">
+                    <h3>Pancit Bihon</h3>
+                    <p>A traditional Filipino comfort food that everyone should try.</p>
+                    <a href="Pancit.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="recipe-card">
+                    <img src="https://www.thelittleepicurean.com/wp-content/uploads/2017/02/champorado-filipino-chocolate-rice-porridge-1.jpg" alt="Champorado" class="recipe-img">
+                    <h3>Champorado</h3>
+                    <p>Champorado is a Filipino chocolate rice porridge that is traditionally served for breakfast.</p>
+                    <a href="Champorado.html" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
