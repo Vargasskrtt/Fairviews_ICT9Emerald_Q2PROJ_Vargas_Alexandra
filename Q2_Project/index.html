@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Recipes Showcase</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://hips.hearstapps.com/harpersbazaar/assets/16/19/1462821646-hbz-lake-como-index.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            font-size: 14px; 
+            font-family: 'Georgia', serif;
+            padding-top: 120px; 
+        }
+
+        .navbar {
+            background-color: white;
+            border-bottom: 2px solid #d3d3d3;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #333;
+        }
+
+        .navbar-brand img {
+            width: 150px;
+            height: auto;
+        }
+
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #4B3621;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-section h2 {
+            font-size: 2.5em;
+            font-family: 'Edwardian Script ITC', cursive;
+            color: #4B3621;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            color: #6c4f3f;
+            margin-top: 20px;
+        }
+
+        .writer-profiles {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .writer-profile {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 22%;
+            text-align: center;
+        }
+
+        .writer-profile h3 {
+            font-size: 1.5em;
+            font-family: 'Edwardian Script ITC', cursive;
+            color: #4B3621;
+        }
+
+        .writer-profile p {
+            font-size: 1em;
+            color: #6c4f3f;
+        }
+
+        .writer-profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #4B3621;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .navbar .form-control {
+            border: none;
+            padding: 8px;
+            font-size: 1em;
+        }
+
+        .navbar .btn-success {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 1em;
+        }
+
+        .navbar .btn-success:hover {
+            background-color: #218838;
+        }
+
+        @media (max-width: 768px) {
+            .writer-profile {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .writer-profile {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://img.freepik.com/premium-vector/food-recipe-book-logo-design_139372-114.jpg" alt="Food Recipe Book Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="secondpage.html">Second Page</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex ml-auto">
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <button class="btn btn-success" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <h2>Welcome to Our Recipes page</h2>
+        <p>Our website brings you the best of traditional Filipino cuisine. With the help of our experienced authors, you can explore delicious recipes that bring the charm of the Philippines to your home.</p>
+    </section>
+
+    <section class="writer-profiles">
+        <div class="writer-profile">
+            <img src="https://r2.erweima.ai/imgcompressed/img/compressed_49f59e58f048528e7802c19bac363d4e.webp" alt="Writer Photo">
+            <h3>John Doe</h3>
+            <p>Filipino food enthusiast sharing traditional recipes and culinary techniques from all around the world.</p>
+        </div>
+        <div class="writer-profile">
+            <img src="https://thumbs.dreamstime.com/z/cute-cat-chef-s-hat-sits-front-plate-food-artificial-intelligence-cute-cat-chef-s-hat-sits-front-323997022.jpg" alt="Writer Photo">
+            <h3>Jane Smith</h3>
+            <p>Passionate about authentic Filipino cooking with a special focus on regional dishes.</p>
+        </div>
+        <div class="writer-profile">
+            <img src="https://media.istockphoto.com/id/173574712/photo/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=ZulY4BBGYoyJ6vKPATOIUaqYTQqsPgpbNOaKi42eu7g=" alt="Writer Photo">
+            <h3>Michael Rossi</h3>
+            <p>Expert in wines and the perfect food pairings to go with every dish.</p>
+        </div>
+        <div class="writer-profile">
+            <img src="https://img.freepik.com/premium-photo/cute-rat-chefs-hat-cooks-food-pot-home-pet_1036975-229885.jpg" alt="Writer Photo">
+            <h3>Anna Bellini</h3>
+            <p>Known for her creative twists on traditional Filipino desserts, bringing modern flavors to classic recipes.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+       2024 Recipes Showcase | Made by Alexandra Milan E. Vargas</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
